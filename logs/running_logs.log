@@ -69,3 +69,96 @@ Traceback (most recent call last):
   File "C:\Users\nandi\anaconda3\envs\covidenv\lib\zipfile.py", line 1338, in _RealGetContents
     raise BadZipFile("File is not a zip file")
 zipfile.BadZipFile: File is not a zip file
+[2024-04-14 18:34:17,609:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-04-14 18:34:17,617:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-04-14 18:34:17,621:INFO:common:created directory at: artifacts]
+[2024-04-14 18:34:17,623:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-04-14 18:34:17,625:INFO:986331348:Downloading data from https://drive.google.com/file/d/1h92EBFNYeVreVuYyjtATtkGu1iLTdFyt/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-14 18:37:36,419:INFO:986331348:Downloaded data from https://drive.google.com/file/d/1h92EBFNYeVreVuYyjtATtkGu1iLTdFyt/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-14 18:53:17,058:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-04-14 18:53:17,067:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-04-14 18:53:17,068:INFO:common:created directory at: artifacts]
+[2024-04-14 18:53:17,070:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-04-14 18:53:17,072:INFO:986331348:Downloading data from https://drive.google.com/file/d/1h92EBFNYeVreVuYyjtATtkGu1iLTdFyt/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-14 18:56:39,006:INFO:986331348:Downloaded data from https://drive.google.com/file/d/1h92EBFNYeVreVuYyjtATtkGu1iLTdFyt/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-14 19:25:40,731:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-04-14 19:25:40,755:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-04-14 19:25:40,767:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-04-14 19:25:40,768:INFO:common:created directory at: artifacts]
+[2024-04-14 19:25:40,769:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-04-14 19:25:41,795:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Content-Type: text/html; charset=utf-8
+X-Robots-Tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Mon, 15 Apr 2024 02:25:42 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+Referrer-Policy: origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Set-Cookie: NID=513=PjPystKwKl4mw4aYyKNg7XLbYYmHYXiV3giTpxy7-F0K6auc9h2sToj6h97d-UHDldSeJa_Iw0AhOoWcAsinnrmrevxBNiJvnezFLg2PFx2JQb9U_w2fjZgKTkgSNTG9vVjSQoKo3nkxReeaC50O7xqWUWHfdLFHAA1oERTFCAY; expires=Tue, 15-Oct-2024 02:25:42 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+]
+[2024-04-14 19:25:41,895:ERROR:main:File is not a zip file]
+Traceback (most recent call last):
+  File "main.py", line 8, in <module>
+    data_ingestion.main()
+  File "C:\Users\nandi\anaconda3\envs\covidenv\lib\site-packages\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.extract_zip_file()
+  File "C:\Users\nandi\anaconda3\envs\covidenv\lib\site-packages\cnnClassifier\components\data_ingestion.py", line 32, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\nandi\anaconda3\envs\covidenv\lib\zipfile.py", line 1271, in __init__
+    self._RealGetContents()
+  File "C:\Users\nandi\anaconda3\envs\covidenv\lib\zipfile.py", line 1338, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-04-14 19:29:16,584:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-04-14 19:29:16,586:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-04-14 19:29:16,586:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-04-14 19:29:16,587:INFO:common:created directory at: artifacts]
+[2024-04-14 19:29:16,587:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-04-14 19:29:17,028:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Content-Type: text/html; charset=utf-8
+X-Robots-Tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Mon, 15 Apr 2024 02:29:17 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+Referrer-Policy: origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Set-Cookie: NID=513=ZSO_z9YG2K2uv7oUTjWtYmJg2PF3EOny5TrVVoq9R2puX8wwyIY9LAs-UckAAXg_tvYiNX1vsElPTmUbau6t7euArzRfkVJ-7XdHiJc83qGxNYP7cH5PZRwCAUDDX0dnkElAKz41eZLYfAhm5gmFJrGM4JSQUROdib_tB5ZUNPU; expires=Tue, 15-Oct-2024 02:29:17 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+]
+[2024-04-14 19:29:17,159:ERROR:main:File is not a zip file]
+Traceback (most recent call last):
+  File "E:\COVID-Prediction-Classification-Project\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "C:\Users\nandi\AppData\Roaming\Python\Python312\site-packages\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.extract_zip_file()
+  File "C:\Users\nandi\AppData\Roaming\Python\Python312\site-packages\cnnClassifier\components\data_ingestion.py", line 32, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\zipfile\__init__.py", line 1338, in __init__
+    self._RealGetContents()
+  File "C:\Program Files\Python312\Lib\zipfile\__init__.py", line 1405, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file

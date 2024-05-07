@@ -7,6 +7,7 @@ src/COVID_prediction.egg-info/dependency_links.txt
 src/COVID_prediction.egg-info/top_level.txt
 src/COVID_prediction/components/__init__.py
 src/COVID_prediction/components/data_ingetion.py
+src/COVID_prediction/components/prepare_base_model.py
 src/COVID_prediction/config/__init__.py
 src/COVID_prediction/config/configuration.py
 src/COVID_prediction/constants/__init__.py
@@ -14,5 +15,6 @@ src/COVID_prediction/entity/__init__.py
 src/COVID_prediction/entity/config_entity.py
 src/COVID_prediction/pipeline/__init__.py
 src/COVID_prediction/pipeline/stage_01_data_ingestion.py
+src/COVID_prediction/pipeline/stage_02_prepare_base_model.py
 src/COVID_prediction/utils/__init__.py
 src/COVID_prediction/utils/common.py

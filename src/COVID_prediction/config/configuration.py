@@ -1,6 +1,6 @@
-from cnnClassifier.constants import *
-from cnnClassifier.utils.common import read_yaml, create_directories
-from cnnClassifier.entity.config_entity import (DataIngestionConfig, PrepareBaseModelConfig)
+from COVID_prediction.constants import *
+from COVID_prediction.utils.common import read_yaml, create_directories
+from COVID_prediction.entity.config_entity import (DataIngestionConfig, PrepareBaseModelConfig)
 
 class ConfigurationManager:
     def __init__(

@@ -1,6 +1,6 @@
-from cnnClassifier.config.configuration import ConfigurationManager
-from cnnClassifier.components.data_ingestion import DataIngestion
-from cnnClassifier import logger
+from COVID_prediction.config.configuration import ConfigurationManager
+from COVID_prediction.components.data_ingetion import DataIngestion
+from COVID_prediction import logger
 
 STAGE_NAME = "Data Ingestion stage"
 

@@ -1,6 +1,6 @@
-from cnnClassifier.config.configuration import ConfigurationManager
-from cnnClassifier.components.prepare_base_model import PrepareBaseModel
-from cnnClassifier import logger
+from COVID_prediction.config.configuration import ConfigurationManager
+from COVID_prediction.components.prepare_base_model import PrepareBaseModel
+from COVID_prediction import logger
 
 STAGE_NAME = "Prepare Base Model"
 
